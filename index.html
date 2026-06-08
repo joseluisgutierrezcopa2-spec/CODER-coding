@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <header class="box header-box">
+            <h1>PEDIDOS YA!</h1>
+        </header>
+
+        <div class="middle-section">
+            
+            <nav class="box menu-box">
+                <h2>MENU</h2>
+                <ul>
+                    <li><a href="pagina1.html" class="active">Pag1. PEDIDOS</a></li>
+                    <li><a href="pagina2.html">Pag2. Rastreo GPS</a></li>
+                </ul>
+            </nav>
+
+            <main class="box contenido-box">
+                <h2>CONTENIDO</h2>
+                <h3 class="subtitulo">Menú del Día</h3>
+                
+                <div class="platos-lista">
+                    <div class="plato-item">
+                        <span class="plato-info">Hamburguesa Completa — 35 Bs.</span>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Hamburguesa Completa', 35)">Agregar</button>
+                    </div>
+                    <div class="plato-item">
+                        <span class="plato-info">Pizza Familiar — 70 Bs.</span>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Pizza Familiar', 70)">Agregar</button>
+                    </div>
+                    <div class="plato-item">
+                        <span class="plato-info">Papas Fritas — 15 Bs.</span>
+                        <button class="btn-agregar" onclick="agregarAlCarrito('Papas Fritas', 15)">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="carrito-seccion">
+                    <h4>Tu Pedido:</h4>
+                    <ul id="lista-carrito">
+                        </ul>
+                    <p class="total-texto">Total: <span id="total-precio">0</span> Bs.</p>
+                </div>
+
+                <button id="btn-confirmar" class="btn-gigante" onclick="confirmarPedido()">Confirmar Pedido y Rastrear</button>
+            </main>
+
+        </div>
+
+        <footer class="box footer-box">
+            <p>desarrollado por LINUS LP, 2026</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

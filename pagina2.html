@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea: HTML + CSS + JS - Página 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <header class="box header-box">
+            <h1>PEDIDOS YA!</h1>
+        </header>
+
+        <div class="middle-section">
+            
+            <nav class="box menu-box">
+                <h2>MENU</h2>
+                <ul>
+                    <li><a href="pagina1.html">Pag1. Restaurante</a></li>
+                    <li><a href="pagina2.html" class="active">Pag2. Rastreo GPS</a></li>
+                </ul>
+            </nav>
+
+            <main class="box contenido-box">
+                <h2>CONTENIDO</h2>
+                
+                <div class="info-pedido-superior">
+                    <p><strong>Estado:</strong> <span id="pedido-id">Cargando pedido...</span></p>
+                    <p><strong>Monto a pagar:</strong> <span id="pedido-total">0</span> Bs.</p>
+                </div>
+
+                <h3 class="titulo-rastreo">¡Tu pedido está en camino!</h3>
+                
+                <button id="btn-rastrear" class="btn-rastreo" onclick="rastrearMoto()">
+                    Rastrear mi Moto Repartidora 🏍️
+                </button>
+
+                <div id="pantalla-gps" class="recuadro-gps">
+                    <p class="placeholder-gps">Presiona el botón para iniciar el rastreo satelital de la moto...</p>
+                </div>
+            </main>
+
+        </div>
+
+        <footer class="box footer-box">
+            <p>desarrollado por LINUS LP, 2026</p>
+        </footer>
+
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
